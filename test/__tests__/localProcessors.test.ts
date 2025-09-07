@@ -1,4 +1,3 @@
-import { OutputType } from '../../src/const';
 import { LocalProcessors } from '../../src/processors/localProcessors';
 
 class FakeReplacer { getFullPath(_: string) { return 'C:/vault'; } }

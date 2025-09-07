@@ -1,6 +1,6 @@
 import PlantumlPlugin from "../main";
 import {Processor} from "./processor";
-import {MarkdownPostProcessorContext, moment} from "obsidian";
+import {MarkdownPostProcessorContext} from "obsidian";
 import * as plantuml from "plantuml-encoder";
 import {insertAsciiImage, insertImageWithMap, insertSvgImage} from "../functions";
 import {OutputType} from "../const";
