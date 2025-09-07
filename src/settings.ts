@@ -65,7 +65,7 @@ export class PlantUMLSettingsTab extends PluginSettingTab {
                 .addText(text => text.setPlaceholder(DEFAULT_SETTINGS.localJar)
                     .setValue(this.plugin.settings.localJar)
                     .onChange(async (value) => {
-                            this.plugin.settings.localJar = value;
+                            this.plugin.settings.localJar = value.replace('"', '').replace("'", "");
                             await this.plugin.saveSettings();
                         }
                     )
@@ -77,7 +77,7 @@ export class PlantUMLSettingsTab extends PluginSettingTab {
                 .addText(text => text.setPlaceholder(DEFAULT_SETTINGS.javaPath)
                     .setValue(this.plugin.settings.javaPath)
                     .onChange(async (value) => {
-                            this.plugin.settings.javaPath = value;
+                            this.plugin.settings.javaPath = value.replace('"', '').replace("'", "");
                             await this.plugin.saveSettings();
                         }
                     )
@@ -89,7 +89,7 @@ export class PlantUMLSettingsTab extends PluginSettingTab {
                 .addText(text => text.setPlaceholder(DEFAULT_SETTINGS.dotPath)
                     .setValue(this.plugin.settings.dotPath)
                     .onChange(async (value) => {
-                            this.plugin.settings.dotPath = value;
+                            this.plugin.settings.dotPath = value.replace('"', '').replace("'", "");
                             await this.plugin.saveSettings();
                         }
                     )
