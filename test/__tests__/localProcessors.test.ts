@@ -29,6 +29,6 @@ describe('LocalProcessors resolveLocalJarCmd', () => {
     plugin.settings.localJar = 'plantuml';
     const lp: any = new LocalProcessors(plugin);
     const args = lp["resolveLocalJarCmd"]();
-    expect(args[0].replace(/\\/g, '/')).toBe('C:/vault/plantuml');
+    expect(args[0].replace(/\\/g, '/')).toBe('"C:/vault/plantuml"');
   });
 });
