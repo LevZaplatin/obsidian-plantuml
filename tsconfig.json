@@ -16,7 +16,8 @@
       "es2015",
       "esnext"
     ],
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["jest" ]
   },
   "include": [
     "**/*.ts"

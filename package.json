@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "node esbuild.config.mjs",
     "build": "node esbuild.config.mjs production",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Johannes Theiner",
   "license": "MIT",
   "devDependencies": {
+    "ts-jest": "^29.2.5",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12",
     "@types/binary-split": "^1.0.0",
     "@types/node": "^14.14.2",
     "@types/plantuml-encoder": "^1.4.0",
