@@ -12,9 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-
       - name: Install dependencies
         run: yarn install
 
@@ -22,6 +19,6 @@ jobs:
         run: yarn run lint
 
       - name: Test
-        run: yarn test --ci --reporters=default --reporters=jest-junit
+        run: yarn test --ci
         env:
           JEST_JUNIT_OUTPUT: junit.xml
